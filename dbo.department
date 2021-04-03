@@ -1,8 +1,6 @@
-CREATE TABLE(
-`department_id` int(11) NOT NULL AUTO_INCREMENT,
-`department` varchar(15) NOT NULL,
-`description` varchar(100) NOT NULL,
-`user_id` int(11) NOT NULL,
-PRIMARY KEY (`department_id`),
-KEY `user_id` (`user_id`)
-) 
+CREATE TABLE [dbo].[department](
+	[Department_Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Department] [varchar](15) NOT NULL,
+	[description] [varchar](100) NOT NULL,
+	[User_Id] [bigint] NOT NULL,
+	)
