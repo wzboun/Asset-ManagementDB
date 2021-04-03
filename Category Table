@@ -1,8 +1,6 @@
-CREATE TABLE dbo.category
-`category_id` int(11) NOT NULL AUTO_INCREMENT,
-`category_name` varchar(30) NOT NULL,
-`description` varchar(100) NOT NULL,
-`user_id` int(11) NOT NULL,
-PRIMARY KEY (`category_id`),
-KEY `user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE [dbo].[category](
+	[Category_Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Category_name] [varchar](30) NOT NULL,
+	[description] [varchar](100) NOT NULL,
+	[User_Id] [bigint] NOT NULL,
+	)
