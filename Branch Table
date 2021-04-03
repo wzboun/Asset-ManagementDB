@@ -5,3 +5,9 @@ CREATE TABLE [dbo].[branch](
 	[Branch_Contact] [varchar](50) NOT NULL,
 	[User_Id] [bigint] NOT NULL
 )
+// CONSTRAINTS ADDED 
+ALTER TABLE [dbo].[branch]
+ADD CONSTRAINT pk_branch PRIMARY KEY ([Branch_Id])
+ADD CONSTRAINT FK1_branchtbl FOREIGN KEY ([User_Id])
+REFERENCES [dbo].[usertbl]([User_Id]);
+
