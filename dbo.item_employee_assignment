@@ -1,14 +1,11 @@
-CREATE TABLE dbo.item_employee_assignment
-`assignment_id` int(11) NOT NULL AUTO_INCREMENT,
-`item_id` int(11) NOT NULL,
-`employee_id` int(11) NOT NULL,
-`branch_id` int(11) NOT NULL,
-`qty` int(11) NOT NULL,
-`condition` varchar(30) NOT NULL,
-`remarks` varchar(100) NOT NULL,
-`date_assigned` date NOT NULL,
-`user_id` int(11) NOT NULL,
-PRIMARY KEY (`assignment_id`),
-KEY `item_id` (`item_id`,`employee_id`,`branch_id`),
-KEY `user_id` (`user_id`)
-);
+Create TABLE dbo.item_employee_assignment(
+	Assignment_Id BIGINT  IDENTITY(1,1) NOT NULL,
+	Item_Id BIGINT NOT NULL,
+	Employee_Id	BIGINT  NOT NULL,
+	Branch_Id BIGINT NOT NULL,
+	qty INT NOT NULL,
+	Condition varchar (30) NOT NULL,
+	remarks varchar (100) NOT NULL,
+	Date_assigned Date  NOT NULL,
+	[User_Id] [bigint] NOT NULL,
+	)
