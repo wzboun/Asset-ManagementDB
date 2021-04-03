@@ -6,4 +6,4 @@ CREATE TABLE dbo.Branch(
 `user_id` int(11) NOT NULL,
 PRIMARY KEY (`branch_id`),
 KEY `user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) 
