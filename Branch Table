@@ -1,9 +1,7 @@
-CREATE TABLE dbo.Branch(
-`branch_id` int(11) NOT NULL AUTO_INCREMENT,
-`location` varchar(100) NOT NULL,
-`address` varchar(100) NOT NULL,
-`contact` varchar(50) NOT NULL,
-`user_id` int(11) NOT NULL,
-PRIMARY KEY (`branch_id`),
-KEY `user_id` (`user_id`)
-) 
+CREATE TABLE [dbo].[branch](
+	[Branch_Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Branch_Location] [varchar](100) NOT NULL,
+	[Branch_Address] [varchar](100) NOT NULL,
+	[Branch_Contact] [varchar](50) NOT NULL,
+	[User_Id] [bigint] NOT NULL
+)
