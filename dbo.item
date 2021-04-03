@@ -1,15 +1,11 @@
-CREATE TABLE dbo.item (
-`item_id` int(11) NOT NULL AUTO_INCREMENT,
-`item_tag` varchar(30) NOT NULL,
-`item_name` varchar(50) NOT NULL,
-`description` varchar(100) NOT NULL,
-`serial_no` varchar(30) NOT NULL,
-`cost` float NOT NULL,
-`date_purchased` date NOT NULL,
-`qty` int(11) NOT NULL,
-`category_id` int(11) NOT NULL,
-`user_id` int(11) NOT NULL,
-PRIMARY KEY (`item_id`),
-KEY `category_id` (`category_id`),
-KEY `user_id` (`user_id`)
-) 
+CREATE TABLE [dbo].[item](
+	[Item_Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Item_Tag] [varchar](30) NOT NULL,
+	Item_name varchar(50) NOT NULL, 
+	Description varchar (100) NOT NULL,
+	Serial_No Varchar (30) NOT NULL,
+	cost float  NOT NULL,
+	Date_Purchased Date NOT NULL,
+	Category_Id BigInt NOT NULL,
+	User_Id BIGINT NOT NULL, 
+	)
