@@ -1,13 +1,10 @@
-CREATE TABLE dbo.transfer_history(
-`history_id` int(11) NOT NULL AUTO_INCREMENT,
-`transferred_from` varchar(100) NOT NULL,
-`transferred_to` varchar(100) NOT NULL,
-`item_id` int(11) NOT NULL,
-`qty` int(11) NOT NULL,
-`date_transfer` date NOT NULL,
-`remarks` varchar(100) NOT NULL,
-`user_id` int(11) NOT NULL,
-PRIMARY KEY (`history_id`),
-KEY `item_id` (`item_id`),
-KEY `user_id` (`user_id`)
-) 
+Create TABLE dbo.transfer_history(
+	History_Id BIGINT  IDENTITY(1,1) NOT NULL,
+	Transferred_from varchar(100) NOT NULL,
+	Transferred_to varchar(100)  NOT NULL,
+	Item_ID BIGINT NOT NULL,
+	qty INT NOT NULL,
+	Date_transfer DATE NOT NULL,
+	remarks varchar (100) NOT NULL,
+	[User_Id] [bigint] NOT NULL,
+	)
