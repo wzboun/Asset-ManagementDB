@@ -1,0 +1,4 @@
+CREATE TABLE dbo.AssetCategory(
+[Asset_Category_ID] bigint IDENTITY(1,1) NOT NULL,
+Asset_Category varchar (50)  Not Null,
+)
