@@ -1,6 +1,0 @@
-CREATE TABLE [dbo].[category](
-	[Category_Id] [bigint] IDENTITY(1,1) NOT NULL,
-	[Category_name] [varchar](30) NOT NULL,
-	[description] [varchar](100) NOT NULL,
-	[User_Id] [bigint] NOT NULL,
-	)
