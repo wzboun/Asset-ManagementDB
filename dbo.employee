@@ -1,9 +1,0 @@
-CREATE TABLE [dbo].[employee](
-	[Employee_Id] [bigint] IDENTITY(1,1) NOT NULL,
-	[First_name] [varchar](50) NOT NULL,
-	Last_Name varchar(50) NOT NULL, 
-	Email varchar (300) NOT NULL,
-	Department_Id BigInt NOT NULL,
-	[Branch_Id] bigint NOT NULL,
-	[User_Id] [bigint] NOT NULL,
-	)
