@@ -1,0 +1,3 @@
+ALTER TABLE [dbo].[Assets]
+ADD CONSTRAINT FK1_EmployeeAsset
+FOREIGN KEY([Employee_ID]) REFERENCES dbo.employee(Employee_ID)
