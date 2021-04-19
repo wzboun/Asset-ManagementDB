@@ -1,0 +1,15 @@
+CREATE TABLE Employee(
+Employee_ID bigint IDENTITY(1,1) Not Null,
+Employee_Number varchar(30) NOT NULL, 
+First_Name varchar(50) NOT NULL, 
+Last_Name varchar(50) NOT NULL,
+Title varchar(50) NOT NULL,
+Email varchar(100) NOT NULL,
+Extension varchar(10)  NULL,
+Home_Phone varchar(20)  NULL, 
+Work_Phone varchar(20) Not NULL,
+Notes varchar(400) NOT NULL, 
+Office_Location varchar (20) Not NULL,
+Primary KEY(Employee_ID),
+)
+
