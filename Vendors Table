@@ -1,0 +1,15 @@
+CREATE TABLE Vendors(
+Vendor_ID bigint identity(1,1) Not Null,
+Vendor_Name varchar(50) NOT NULL, 
+Contact_F_Name varchar(50) NOT NULL, 
+Contact_L_Name varchar(50) NOT NULL, 
+Title varchar(50) NOT NULL, 
+[Address] varchar(300) NOT NULL, 
+City varchar(50) NOT NULL,
+StateOrProvince varchar(20) NOT NULL,
+PostalCode varchar(20) not null,
+Country varchar(50) NOT NULL,
+Phone_Number varchar(20) Not Null,
+Notes varchar (500) Not Null,
+Primary Key(Vendor_ID),
+)
