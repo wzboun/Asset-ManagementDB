@@ -1,0 +1,9 @@
+CREATE TABLE Maintenance(
+Maintenance_ID BIGINT IDENTITY(1,1) NOT NULL,
+Asset_ID BIGINT NOT NULL,
+Maintenance_Date DATETIME NULL,
+Maintenance_Description varchar(300) NULL,
+Maintenance_Performed_By varchar(50) NOT NULL,
+Maintenance_Cost money NOT NULL,
+PRIMARY KEY (Maintenance_ID),
+)
