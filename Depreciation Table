@@ -1,0 +1,21 @@
+CREATE TABLE [dbo].[Depreciation](
+	[Depreciation_ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[Asset_ID] [bigint] NOT NULL,
+	[Depreciation_Date] [datetime] NULL,
+	[Depreciation_Amount] [money] NOT NULL,
+	[Book_Value] [money] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Depreciation_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Depreciation]  WITH CHECK ADD  CONSTRAINT [FK_AssetID_Depreciation] FOREIGN KEY([Asset_ID])
+REFERENCES [dbo].[Assets] ([Asset_ID])
+GO
+
+ALTER TABLE [dbo].[Depreciation] CHECK CONSTRAINT [FK_AssetID_Depreciation]
+GO
+
+
