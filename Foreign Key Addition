@@ -1,3 +1,27 @@
 ALTER TABLE [dbo].[Assets]
 ADD CONSTRAINT FK1_EmployeeAsset
 FOREIGN KEY([Employee_ID]) REFERENCES dbo.employee(Employee_ID)
+#################################################################
+ALTER TABLE [dbo].[Assets]
+ADD CONSTRAINT FK2_AssetCategory
+FOREIGN KEY([Asset_Category_ID]) REFERENCES[dbo].[AssetCategory]([Asset_Category_ID]);
+#############################################################
+
+ALTER TABLE [dbo].[Assets]
+ADD CONSTRAINT FK3_StatusID
+FOREIGN KEY([Status_ID]) REFERENCES [dbo].[Status]([Status_ID]);
+##################################################################
+
+ALTER TABLE [dbo].[Assets]
+ADD CONSTRAINT FK4_DepartmentAsset
+FOREIGN KEY([Department_Id]) REFERENCES [dbo].[Departments]([Department_Id]);
+###################################################################
+
+ALTER TABLE [dbo].[Vendors]
+ADD CONSTRAINT FK5_VendorAsset
+FOREIGN KEY([Vendor_ID]) REFERENCES [dbo].[Vendors]([Vendor_ID]);
+####################################################################
+ALTER TABLE [dbo].[Depreciation]
+ADD CONSTRAINT FK_AssetID_Depreciation
+FOREIGN KEY([Asset_ID]) REFERENCES[dbo].[Assets]([Asset_ID]);
+####################################################################
